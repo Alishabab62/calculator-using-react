@@ -4,7 +4,7 @@ export default class Td extends Component {
   render() {
     return (
       <>
-        <td colSpan={this.props.colSpan} onClick={this.props.fun}>{this.props.output}</td>
+        <td colSpan={this.props.colSpan} style={this.props.style} onClick={(e) => {this.props.fun(e.target.innerText)}}>{this.props.output}</td>
       </>
     )
   }
