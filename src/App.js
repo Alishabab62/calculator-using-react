@@ -13,7 +13,7 @@ class App extends Component {
       this.calculate();
     }
 
-    else if(button === "C") {
+    else if(button === "AC") {
       this.reset();
     }
 
